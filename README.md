@@ -45,13 +45,9 @@
 
 ## 开始运行
 
-进入 `src/chipmatch/` 后：
+当前 GitHub 仓库首先承担版本与比赛档案管理；完整可运行源码仍以正式交付包为准，源码迁移状态见 `SOURCE_MIGRATION.md`。
 
-Windows：运行 `一键启动芯造天工.bat`
-
-macOS/Linux：运行 `./一键启动芯造天工.sh`
-
-完整验证：`./04_开发与测试/02_验证脚本/run_full_validation.sh`
+源码完整入库后，再在此处固定唯一的 Windows / macOS / Linux 启动命令，避免 README 与真实目录不一致。
 
 ## 历史版本
 
