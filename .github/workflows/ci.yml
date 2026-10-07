@@ -1,0 +1,22 @@
+name: 芯造天工工程验证
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Python compile
+        run: python -m compileall -q 01_程序
+      - name: JavaScript syntax
+        run: node --check 01_程序/web/app.js
+      - name: Unit tests
+        run: python -m unittest discover -s 04_开发与测试/02_验证脚本/tests -q
+      - name: Competition smoke gate
+        run: python 04_开发与测试/02_验证脚本/verify_competition_release.py
