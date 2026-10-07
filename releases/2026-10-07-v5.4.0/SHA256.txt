@@ -1,0 +1,7 @@
+v5.4.0 full delivery ZIP
+47e2723d8f19c0c21039d01606e837f938eb2391d109a8b8f570c93392b00b86
+
+Prepared curated source snapshot
+429c97c0b5e3a4e27848b0b7b07863c2798e3db454287df29aa0d8b1664f8dc9
+
+Note: SHA-256 verifies the corresponding local artifact; it does not by itself prove engineering correctness.
